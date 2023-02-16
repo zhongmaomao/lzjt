@@ -1,0 +1,9 @@
+slots: 车牌号
+qrl: match (person:人员) -[r:驾驶]->(vehical:车辆) where vehical.name = "[???]" return person.name
+success: 驾驶过该车人有：[???]
+fail: 对不起，查询无结果，或车牌信息不存在！
+
+有哪些人驾驶过桂B11555公交车？
+谁开过桂B12455
+桂B98763驾驶人信息
+桂B54321司机是谁
