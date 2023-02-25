@@ -8,6 +8,10 @@ os.environ["DJANGO_SETTINGS_MODULE"] = "gwcomments.settings"
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 
 
-class Slots:
-    def __init__(self):
-        self.slot_path = os.path.join(curr_dir, "rule/" + ruleName + ".txt")
+def load_all_slots():
+    slots_path = os.path.join(curr_dir, "slots.txt")
+    all_slots = []
+    with open(slots_path, mode='r', encoding='utf8') as file:
+        return file.read().splitlines()
+
+

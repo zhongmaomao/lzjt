@@ -1,1 +1,4 @@
 车牌号
+slot1
+slot2
+slot3

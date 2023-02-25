@@ -19,7 +19,8 @@ class ruleLoader:
     def __init__(self, rule, dict):
         self.rule_path = os.path.join(curr_dir, "rule/" + rule + ".txt")
         with open(self.rule_path, encoding='utf-8') as f:
-            self.lines = f.readlines()[0:4]
+            self.lines = f.read().splitlines()[0:4]
+        print(self.lines)
         self.dict = dict
 
     def create_qrl(self):

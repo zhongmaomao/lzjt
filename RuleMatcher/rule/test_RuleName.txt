@@ -1,0 +1,10 @@
+slots: slot1,slot2,slot3
+qrl: test_qrl
+success: test_success
+fail: test_fail
+
+example0
+example1
+example2
+example3
+example4
